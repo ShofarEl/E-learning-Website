@@ -1,0 +1,17 @@
+```gitignore
+# Node
+node_modules
+.env
+dist
+.vscode
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+
+# React
+build
