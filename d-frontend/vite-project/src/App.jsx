@@ -67,9 +67,7 @@ console.log("User: ", user)
         <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
         
         <Route path="/signin" element={
-          <AuthRoute>
             <Signin />
-          </AuthRoute>
         } />
         
         <Route path="/signup" element={
