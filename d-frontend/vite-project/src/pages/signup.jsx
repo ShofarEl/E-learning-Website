@@ -5,7 +5,7 @@ import Input from '../components/Input';
 import PasswordStrengthMeter from '../components/PasswordStrengthMeter';
 import { useAuthStore } from '../store/authstore';
 import { useNavigate } from 'react-router-dom';
-import { FloatingShape } from '../components/FloatingShape';
+import { FloatingShape } from '../components/floatingshape';
 
 
 const Signup = () => {

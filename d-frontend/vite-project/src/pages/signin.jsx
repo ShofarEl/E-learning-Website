@@ -4,7 +4,7 @@ import { Mail, Lock } from 'lucide-react';
 import Input from '../components/Input';
 import { useAuthStore } from '../store/authstore';
 import { useNavigate } from 'react-router';
-import { FloatingShape } from '../components/FloatingShape';
+import { FloatingShape } from '../components/floatingshape';
 
 const Signin = () => {
   const [email, setEmail] = useState("");
