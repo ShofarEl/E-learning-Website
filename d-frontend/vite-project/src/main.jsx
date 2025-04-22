@@ -7,18 +7,19 @@ import { CartProvider } from './context/CartContext';
 import App from './App';
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
+import { HashRouter } from 'react-router-dom';
 
 // Load your Stripe publishable key here
 const stripePromise = loadStripe('pk_test_51RAt2078E9BFqyzu2cM4CA0zPxOpGZ1U3MeCigYwkdgbS5e3CgBFLqyk55HpkksORnWNe0r2726JqNkfHICfsi9Y00sV7nf9bR'); // Replace with your actual Stripe publishable key
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <CartProvider>
         <Elements stripe={stripePromise}>
           <App />
         </Elements>
       </CartProvider>
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );
