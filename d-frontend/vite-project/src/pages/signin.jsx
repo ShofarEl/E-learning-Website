@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
-import {FloatingShape} from '../components/FloatingShape';
+import FloatingShape from '../components/FloatingShape';
 import { Mail, Lock } from 'lucide-react';
 import Input from '../components/Input';
 import { useAuthStore } from '../store/authstore';
