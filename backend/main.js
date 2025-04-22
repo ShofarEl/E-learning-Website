@@ -12,7 +12,7 @@ import { connectDB } from "./database/db.js"
 const app = express()
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 //middle ware
-app.use(cors({origin : "http://localhost:5173", credentials:true}))
+app.use(cors({origin : "http://edumallx.onrender.com"|| "http://localhost:5173", credentials:true}))
 
 app.use(express.json())
 app.use(cookieParser())
@@ -48,7 +48,7 @@ function calculateOrderAmount(items) {
     }
   });
 app.use('/api/auth', AuthRoutes)
-const PORT = Number(process.env.PORT) || 3000
+const PORT = Number(process.env.PORT) || 5000
 
 
 app.listen(PORT, ()=>{
