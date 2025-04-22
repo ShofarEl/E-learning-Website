@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
-import FloatingShape from '../components/FloatingShape';
 import { Mail, Lock } from 'lucide-react';
 import Input from '../components/Input';
 import { useAuthStore } from '../store/authstore';
 import { useNavigate } from 'react-router';
+import FloatingShape from '../components/FloatingShape';
+
 export default function Signin(){
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
