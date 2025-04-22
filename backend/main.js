@@ -12,7 +12,7 @@ import { connectDB } from "./database/db.js"
 const app = express()
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 //middle ware
-app.use(cors({origin : "http://edumallx.onrender.com"|| "http://localhost:5173", credentials:true}))
+app.use(cors({origin : "https://edumally.onrender.com"|| "http://localhost:5173", credentials:true}))
 
 app.use(express.json())
 app.use(cookieParser())

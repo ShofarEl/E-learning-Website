@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import axios from 'axios';
 
-const API_URI = "https://edumally.onrender.com/api/auth" || 'http://localhost:3000/api/auth';
+const API_URI = "https://edumallx.onrender.com/api/auth" || 'http://localhost:3000/api/auth';
 
 export const useAuthStore = create((set) => ({
   user: null,
