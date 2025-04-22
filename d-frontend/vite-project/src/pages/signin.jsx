@@ -4,9 +4,9 @@ import { Mail, Lock } from 'lucide-react';
 import Input from '../components/Input';
 import { useAuthStore } from '../store/authstore';
 import { useNavigate } from 'react-router';
-import FloatingShape from '../components/FloatingShape.js';
+import { FloatingShape } from '../components/FloatingShape';
 
-export default function Signin(){
+const Signin = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -157,3 +157,5 @@ export default function Signin(){
     </div>
   );
 };
+
+export default Signin
